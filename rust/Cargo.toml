@@ -1,0 +1,27 @@
+[package]
+name = "skmutliflow_fast_api"
+version = "0.1.0"
+authors = ["luccaportes <lucca54@gmail.com>"]
+edition = "2018"
+keywords = ["numpy", "python", "binding"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "myrustlib"
+crate-type = ["dylib"]
+
+#[dependencies.pyo3]
+#version = "0.9.0-alpha.1"
+#features = ["extension-module"]
+
+[dependencies]
+ndarray = "0.13.1"
+ndarray-rand = "0.11.0"
+numpy = "0.9.0"
+#= { path = "../skmultiflow_fast" }
+rand = "0.7.3"
+
+[dependencies.pyo3]
+version = "0.10.1"
+features = ["extension-module"]
